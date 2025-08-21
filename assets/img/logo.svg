@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="CSE Segurança Eletrônica">
+	<defs>
+		<linearGradient id="shield-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+			<stop offset="0%" stop-color="#E4A374" />
+			<stop offset="30%" stop-color="#D97442" />
+			<stop offset="70%" stop-color="#C4633A" />
+			<stop offset="100%" stop-color="#B85C3B" />
+		</linearGradient>
+		<filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+			<feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.3)"/>
+		</filter>
+	</defs>
+	
+	<!-- Escudo principal com formato mais fidedigno -->
+	<path d="M32 6 L22 10 C18 11.5 16 13 16 16 C16 28 16 36 32 54 C48 36 48 28 48 16 C48 13 46 11.5 42 10 L32 6 Z" 
+		  fill="url(#shield-gradient)" 
+		  filter="url(#shadow)" 
+		  stroke="#A0522D" 
+		  stroke-width="0.5"/>
+	
+	<!-- Sombra interna do escudo -->
+	<path d="M32 8 L24 11 C21 12 20 13 20 15 C20 26 20 33 32 48 C44 33 44 26 44 15 C44 13 43 12 40 11 L32 8 Z" 
+		  fill="none" 
+		  stroke="rgba(0,0,0,0.1)" 
+		  stroke-width="0.5"/>
+	
+	<!-- Fechadura moderna -->
+	<g transform="translate(32, 30)">
+		<!-- Corpo da fechadura -->
+		<rect x="-7" y="1" width="14" height="12" rx="2.5" ry="2.5" 
+			  fill="white" 
+			  opacity="0.95" 
+			  stroke="rgba(160,82,45,0.2)" 
+			  stroke-width="0.5"/>
+		
+		<!-- Arco superior da fechadura -->
+		<path d="M -5 1 C -5 -4 -3 -6 0 -6 C 3 -6 5 -4 5 1" 
+			  fill="none" 
+			  stroke="white" 
+			  stroke-width="3" 
+			  stroke-linecap="round" 
+			  opacity="0.95"/>
+		
+		<!-- Arco interno para profundidade -->
+		<path d="M -4 1 C -4 -3 -2 -4.5 0 -4.5 C 2 -4.5 4 -3 4 1" 
+			  fill="none" 
+			  stroke="rgba(217,116,66,0.3)" 
+			  stroke-width="1.5" 
+			  stroke-linecap="round"/>
+		
+		<!-- Buraco da chave - círculo -->
+		<circle cx="0" cy="6" r="2.5" fill="url(#shield-gradient)" opacity="0.8"/>
+		<circle cx="0" cy="6" r="1.8" fill="#A0522D"/>
+		
+		<!-- Buraco da chave - ranhura -->
+		<rect x="-0.7" y="7.5" width="1.4" height="4" rx="0.7" fill="#A0522D"/>
+		
+		<!-- Brilho na fechadura -->
+		<rect x="-6" y="2" width="2" height="8" rx="1" 
+			  fill="rgba(255,255,255,0.3)" 
+			  opacity="0.6"/>
+	</g>
+	
+	<!-- Brilho no escudo -->
+	<path d="M28 12 C30 10 34 10 36 12 C38 14 38 18 36 20" 
+		  fill="none" 
+		  stroke="rgba(255,255,255,0.2)" 
+		  stroke-width="1.5" 
+		  stroke-linecap="round"/>
+</svg>
